@@ -78,10 +78,9 @@ if (!isLoaded) {
     <section className="contact" id="connect">
       <Container>
         <Row className="align-items-center">
-          <Col size={12} md={6}>
+          <Col className="col-xs-12 .col-sm-6">
             <TrackVisibility>
               {({ isVisible }) =>
-                //  <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us" style={{height:"600px",width:"400px"}}/>
                 <GoogleMap className={isVisible ? "animate__animated animate__zoomIn" : ""}
         mapContainerStyle={mapContainerStyle}
         zoom={20}
@@ -92,7 +91,7 @@ if (!isLoaded) {
               }
             </TrackVisibility>
           </Col>
-          <Col size={12} md={6}>
+          <Col  className="col-xs-12 .col-sm-6">
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
@@ -113,7 +112,7 @@ if (!isLoaded) {
                     <Col size={12}  className="px-1">
                       <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} name="from_name"/>
                     </Col>
-                    <Col size={12} sm={6} className="px-1">
+                    <Col size={12} sm={6}  className="px-1">
                       <input type="text" value={formDetails.lastName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)} />
                     </Col>
                     <Col size={12} sm={6} className="px-1">
