@@ -10,14 +10,7 @@ export const Footer = () => {
     <footer className="footer">
       <Container >
         <Row className="align-items-center">
-          {/* <MailchimpForm /> */}
-          <Col size={12} sm={6} className="text-center text-sm-start">
-         
-              {/* <img
-                src={logoPic}
-                alt="Logo"
-                style={{ borderRadius: "50%", }}
-              /> */}
+          <Col size={12} sm={6} className="text-center text-sm-start col-xs-12 col-md-6">
             
             <Col size={12}  style={{ display: 'flex',alignItems: 'center' }}>
               <img
@@ -34,7 +27,7 @@ export const Footer = () => {
             </Col>
 
           </Col>
-          <Col size={12} sm={6} className="text-center text-sm-end">
+          <Col size={12} sm={6} className="text-center text-sm-end col-xs-12 col-md-6">
             <div className="social-icon">
               <a
                 href="https://www.linkedin.com/in/mathyvathana-sivalingam-77130920a/"

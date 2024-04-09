@@ -19,7 +19,7 @@ export const Contact = () => {
 
   const libraries = ['places'];
 const mapContainerStyle = {
-  height:"600px",width:"500px"
+  height:"600px",maxWidth:"500px"
 };
 const center = {
   lat: 6.8725039,
@@ -78,10 +78,10 @@ if (!isLoaded) {
     <section className="contact" id="connect">
       <Container>
         <Row className="align-items-center">
-          <Col className="col-xs-12 .col-sm-6">
-            <TrackVisibility>
+          <Col xs={12} sm={6} >
+            <TrackVisibility >
               {({ isVisible }) =>
-                <GoogleMap className={isVisible ? "animate__animated animate__zoomIn" : ""}
+                <GoogleMap  className={isVisible ? "animate__animated animate__zoomIn" : ""} 
         mapContainerStyle={mapContainerStyle}
         zoom={20}
         center={center}
@@ -91,7 +91,7 @@ if (!isLoaded) {
               }
             </TrackVisibility>
           </Col>
-          <Col  className="col-xs-12 .col-sm-6">
+          <Col  xs={12} sm={6}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
