@@ -24,6 +24,10 @@ export const NavBar = () => {
     },[])
     const onUpdateActiveLink=(value)=>{
         setActiveLink(value);
+        const navbarToggle = document.getElementsByClassName('navbar-toggler')[0];
+        if (navbarToggle && window.innerWidth < 992) {
+            navbarToggle.click();
+        }
     }
     return(
     <Navbar expand="lg" className={scrolled?"scrolled":""}>
